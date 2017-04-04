@@ -9,7 +9,7 @@
 
 ## Font for window titles. Will also be used by the bar unless a different font
 ## is used in the bar {} block below.
-font pango: San Francisco Text, FontAwesome 10
+font pango: Overpass, FontAwesome 10
 
 ## This font is widely installed, provides lots of unicode glyphs, right-to-left
 ## text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -27,34 +27,34 @@ font pango: San Francisco Text, FontAwesome 10
 # Colors
 ##########
 
-# gruvbox
+# nord
 
-set $base00 #2f1e2e
-set $base01 #41323f
-set $base02 #4f424c
-set $base03 #776e71
-set $base04 #8d8687
-set $base05 #a39e9b
-set $base06 #b9b6b0
-set $base07 #e7e9db
+set $base00 #2E3440
+set $base01 #3B4252
+set $base02 #434C5E
+set $base03 #4C566A
+set $base04 #D8DEE9
+set $base05 #E5E9F0
+set $base06 #ECEFF4
+set $base07 #8FBCBB
 
-set $base08 #ef6155
-set $base09 #f99b15
-set $base0A #fec418
-set $base0B #48b685
-set $base0C #5bc4bf
-set $base0D #06b6ef
-set $base0E #815ba4
-set $base0F #e96ba8
+set $base08 #88C0D0
+set $base09 #81A1C1
+set $base0A #5E81AC
+set $base0B #BF616A
+set $base0C #D08770
+set $base0D #EBCB8B
+set $base0E #A3BE8C
+set $base0F #B48EAD
 
 ####################################################################################################
 # Containers
 ##############
 
 ## class						border		bg			text    	indicator	child_border
-client.focused				$base0b 	$base0b 	$base00 	$base01
-client.focused_inactive		$base02 	$base02 	$base03 	$base01
-client.unfocused			$base01 	$base01 	$base03 	$base01
+client.focused				$base08		$base08 	$base00 	$base01
+client.focused_inactive		$base02 	$base02 	$base04 	$base01
+client.unfocused			$base01 	$base01 	$base04 	$base01
 client.urgent_workspace		$base02 	$base08 	$base07 	$base08
 #client.placeholder
 
@@ -530,8 +530,8 @@ new_float pixel 3
 ## Doc:
 ## https://github.com/Airblader/i3
 
- gaps inner 15
- gaps outer 15
+ gaps inner 7
+ gaps outer 7
 
 smart_gaps on
 smart_borders on
@@ -541,10 +541,9 @@ smart_borders on
 # Autostart
 #############
 
-exec xrandr --dpi 160
 exec compton -b
 exec dropbox
-exec feh --bg-fill ~/Dropbox/wallpapers/polyfy/tower-polyfy.png
+exec feh --bg-fill ~/Dropbox/wallpapers/octaweb-4k.png
 exec redshift-gtk
 exec --no-startup-id xss-lock -- /usr/local/bin/i3blur
 #exec /usr/lib/gnome-settings-daemon/gnome-settings-daemon

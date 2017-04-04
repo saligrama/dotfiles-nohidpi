@@ -50,7 +50,8 @@ ZSH_THEME="salig"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git battery zsh-syntax-highlighting archlinux colored-man-pages systemd thefuck themes zsh_reload tmux web-search colorize)
+plugins=(git battery zsh-syntax-highlighting archlinux colored-man-pages 
+systemd themes zsh_reload tmux web-search colorize)
 
 # User configuration
 
@@ -98,5 +99,5 @@ export EDITOR="nano"
 echo "Welcome to `lsb_release -is` `lsb_release -rs`, with `uname -sr`"
 
 echo
-source /usr/share/nvm/init-nvm.sh
+#source /usr/share/nvm/init-nvm.sh
 export LC_ALL=en_US.UTF-8
